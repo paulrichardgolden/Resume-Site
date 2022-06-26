@@ -3,17 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <!--CSS -->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <!-- Favicons -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
       href="assets/icons/apple-touch-icon.png"
     />
+
     <link
       rel="icon"
       type="image/png"
@@ -21,22 +20,23 @@
       href="assets/icons/favicon-32x32.png"
     />
 
-    <!-- Animate CSS CDN -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+
     <title>Paul Golden | Web Developer</title>
   </head>
 
   <body>
-    <!-- Navigation bar -->
+    
+    <!--  Nav bar -->
     <nav>
         <h1>Paul Golden</h1>
         <ul class="navbar">
             <li><a href="#about" class="nav-link">About</a></li>
             <li><a href="#skills" class="nav-link">Skills</a></li>
-            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#work" class="nav-link">Works</a></li>
             <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
         <button class="burger-menu" id="burger-menu">
@@ -44,7 +44,7 @@
         </button>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero section -->
     <section class="hero" id="about">
         <img
             src="assets/images/hero_pic.jpg"
@@ -53,92 +53,183 @@
             class="hero-img"
         />
         <div class="bio animate_animated animate_shakeX">
-            <h2 class="bio-title">About Me</h2>
+            <h2 class="bio-title">Greetings!</h2>
             <p class="bio-text">
-                Test test Test test Test test Test test Test test 
-                Test test Test test Test test Test test Test test 
-                Test test Test test Test test Test test Test test 
-                Test test Test test 
+                I'm Paul. I am a web developer in training, and I'm on a continual 
+                pursuit to hone my ability, both artistic and technical. 
             </p>
         </div>
     </section>
 
     <!-- More about -->
     <section class="more-about">
-        <h2>More About Me</h2>
-        <p>Test test TestTest test TestTest test TestTest test TestTest test TestTest test TestTest test Test
-            Test test TestTest test TestTest test TestTest test Test Test test TestTest test TestTest test Test
-            Test test TestTest test TestTest test Test
+        <h2>To put it briefly...</h2>
+        <p>I've always been fascinated with web development. In 2017, I graduated from West Chester University with a Computer Science degree, 
+          unsure of what I truly wanted to do. In the years since, I've worked in different roles, mainly financial analysis and logistic management. 
+          Throughout this time, however, I've maintained an interest in front end developent and web design. I strive every day to continue to better 
+          myself, professionally and personally, as well as my teammates and those around me.
         </p>
-        <p>Test test TestTest test TestTest test TestTest test TestTest test Test
-            Test test TestTest test TestTest test TestTest test TestTest test TestTest test Test
-            Test test TestTest test TestTest test TestTest test Test
-        </p>
-        <p>Test test TestTest test TestTest test TestTest test TestTest test TestTest test Test
-            Test test TestTest test TestTest test TestTest test TestTest test Test
-            Test test TestTest test TestTest test TestTest test TestTest test TestTest test Test
+        <p>My professional goal is to help bring peoples imaginations and ideas to life, by creating web pages and designs that are joys to interact with, 
+          and make people's daily lives just a little bit easier. 
         </p>
     </section>
 
-    <!-- Skills section -->
+    <!-- Skills -->
     <section class="skills" id="skills">
-        <h2 class="skills-header">Skills</h2>
-        
+      <h2 class="skills-header">Skills</h2>
         <div class="skills-wrapper">
-            <div class="first-set animate__animated animate__pulse">
-                <img
-                    src="assets/icons/icons8-html-5.svg"
-                    alt="HTML5"
-                    loading="lazy"
-                    class="icon icon-card";
-                />
-                <img
-                    src="assets/icons/icons8-css3.svg"
-                    alt="CSS"
-                    loading="lazy"
-                    class="icon icon-card";
-                />
-                <img    
-                    src="assets/icons/icons8-javascript.svg"
-                    alt="Javascript"
-                    loading="lazy"
-                    class="icon icon-card";
-                />
-            </div> 
-            <div class="second-set animate__animated animate__pulse">
-                <img
-                  src="assets/icons/icons8-bootstrap.svg"
-                  alt=""
-                  loading="lazy"
-                  class="icon icon-card"
-                />
-                <img
-                  src="assets/icons/icons8-react-native.svg"
-                  alt=""
-                  loading="lazy"
-                  class="icon icon-card"
-                />
-                <img
-                  src="assets/icons/icons8-git.svg"
-                  alt=""
-                  loading="lazy"
-                  class="icon icon-card"
-                />
-              </div> 
+          <div class="container">
+            <img
+              src="assets/icons/icons8-html-5.svg"
+              alt="HTML5"
+              loading="lazy"
+              class="icon icon-card";
+            />
+            <div class="overlay">
+              <div class="text">
+                HTML5
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <img
+              src="assets/icons/icons8-css3.svg"
+                alt="CSS"
+                loading="lazy"
+                class="icon icon-card";
+              />
+              <div class="overlay">
+                <div class="text">
+                  CSS3
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <img    
+                src="assets/icons/photoshop.png"
+                alt="Javascript"
+                loading="lazy"
+                class="icon icon-card";
+              />
+              <div class="overlay">
+                <div class="text">
+                  Photoshop
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="work" id="work">
+      <h2 class="projects-title">Works</h2>
+        <div class="projects-container project-card">
+          <a href="https://i.imgur.com/OitI8Ev.png" target="_blank" class="project-link">
+            <img 
+              src="assets/images/Portfolio1.png"
+              alt="Energy Company"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3>Energy Company website mockup</h3>
+            <p class="project-details">
+              A small mockup information page for a fictional energy company. 
+              Made in Photoshop.
+            </p>
+          </a>
         </div>
     </section>
-    <!-- Projects section -->
 
     <!-- Contact section -->
+    <section class="contact" id="contact">
+      <h2>Contact</h2>
+        <div class="contact-form-container">
+          <div class="contact-form">
+            <form action="https://formspree.io/f/mjvldedq" method="POST">
+              <div class="form-control">
+                <label for="name">Name:</label>
+                  <input 
+                    type="text"
+                    id="name"
+                    name="sender-name"
+                    placeholder="Enter your name."
+                    class="input-field"
+                    required
+                  />
+              </div>
+              <div class="form-control">
+                <label for="email">Email:</label>
+                  <input
+                    type="text"
+                    id="email"
+                    name="sender-email"
+                    placeholder="Enter your email."
+                    class="input-field"
+                    required
+                  />
+              </div>
+              <div class="form-control">
+                <label for="message">Message:</label>
+                  <textarea
+                    id="message"
+                    cols="60"
+                    rows="10"
+                    placeholder="Enter your message."
+                    name="message"
+                    class="input-field"
+                    required
+                  >
+                  </textarea>
+              </div>
+              <input 
+                type="submit"
+                value="Submit"
+                id="submit-button"
+                class="submit-button"
+              />
+            </form>
+          </div>
+        </div>
+    </section>
 
-    <!-- Social accounts - Fixed to the right -->
+    <!-- Github/LinkedIn -->
+    <div class="socials">
+      <a href="https://github.com/paulrichardgolden" target="_blank">
+      <img 
+        src="assets/icons/github.svg"
+        alt="GitHub"
+        loading="lazy"
+        class="social-icon"
+        />
+      </a>
+      <a href="https://www.linkedin.com/in/paul-golden-849126187/" target="_blank">
+        <img 
+          src="assets/icons/linkedin.png"
+          alt="LinkedIn"
+          loading="lazy"
+          class="social-icon"
+        />
+      </a>
+    </div>
 
-    <!-- Scroll to top -->
-
-    <!-- Footer section -->
-
-    <!-- Website scripts -->
-    <script src="assets/js/app.js"></script>
+    <!-- Javascript to scroll to top on click -->
+    <div class="scrollup">
+      <button class="scroll-up" id="scroll-up" type="button">
+        Top
+      </button>
+      <script>
+        //Scroll to top
+        const scrollUp = document.querySelector("#scroll-up");
+        scrollUp.addEventListener("click", () => {
+          window.scrollTo({
+            top:0,
+            left:0,
+            behavior:"smooth",
+          });
+        });
+      </script>
+    </div>
 
     <!-- Ion icons scripts -->
     <script
@@ -150,4 +241,9 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
   </body>
+  
+  <!-- Footer section -->
+  <footer>
+    <p class="copy">&copy; Copyright 2022</p>
+  </footer>
 </html>
