@@ -29,12 +29,12 @@
   </head>
 
   <body>
-    
+
     <!--  Nav bar -->
     <nav>
         <h1>Paul Golden</h1>
         <ul class="navbar">
-            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#more-about" class="nav-link">About</a></li>
             <li><a href="#skills" class="nav-link">Skills</a></li>
             <li><a href="#work" class="nav-link">Works</a></li>
             <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -62,7 +62,7 @@
     </section>
 
     <!-- More about -->
-    <section class="more-about">
+    <section class="more-about" id="more-about">
         <h2>To put it briefly...</h2>
         <p>I've always been fascinated with web development. In 2017, I graduated from West Chester University with a Computer Science degree, 
           unsure of what I truly wanted to do. In the years since, I've worked in different roles, mainly financial analysis and logistic management. 
@@ -79,12 +79,13 @@
       <h2 class="skills-header">Skills</h2>
         <div class="skills-wrapper">
           <div class="container">
+            <a href="https://github.com/paulrichardgolden/Resume-Site/blob/main/index.html" target="_blank">
             <img
               src="assets/icons/icons8-html-5.svg"
               alt="HTML5"
               loading="lazy"
               class="icon icon-card";
-            />
+            /></a>
             <div class="overlay">
               <div class="text">
                 HTML5
@@ -92,12 +93,13 @@
             </div>
           </div>
           <div class="container">
+            <a href="https://github.com/paulrichardgolden/Resume-Site/blob/main/assets/css/styles.css" target="_blank">
             <img
               src="assets/icons/icons8-css3.svg"
                 alt="CSS"
                 loading="lazy"
                 class="icon icon-card";
-              />
+              /></a>
               <div class="overlay">
                 <div class="text">
                   CSS3
@@ -124,6 +126,7 @@
     <!-- Projects section -->
     <section class="work" id="work">
       <h2 class="projects-title">Works</h2>
+      <div class="projects-container">
         <div class="projects-container project-card">
           <a href="https://i.imgur.com/OitI8Ev.png" target="_blank" class="project-link">
             <img 
@@ -134,11 +137,39 @@
             />
             <h3>Energy Company website mockup</h3>
             <p class="project-details">
-              A small mockup information page for a fictional energy company. 
-              Made in Photoshop.
+              Mockup information page for a fictional energy company. 
             </p>
           </a>
         </div>
+        <div class="projects-container project-card">
+          <a href="https://i.imgur.com/VBCKe6h.png" target="_blank" class="project-link">
+            <img 
+              src="assets/images/Portfolio2.jpg"
+              alt="Web Design Company"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3>Web design firm mockup</h3>
+            <p class="project-details">
+              Mockup splash page for a fictional webdev firm. 
+            </p>
+          </a>
+        </div>
+        <div class="projects-container project-card">
+          <a href="https://i.imgur.com/ZuHeYb5.png" target="_blank" class="project-link">
+            <img 
+              src="assets/images/Email.png"
+              alt="Email"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3>Sales email</h3>
+            <p class="project-details">
+              Mockup email for a fashion company's clothing sale.
+            </p>
+          </a>
+        </div>
+      </div>
     </section>
 
     <!-- Contact section -->
@@ -219,7 +250,6 @@
         Top
       </button>
       <script>
-        //Scroll to top
         const scrollUp = document.querySelector("#scroll-up");
         scrollUp.addEventListener("click", () => {
           window.scrollTo({
@@ -242,7 +272,7 @@
     ></script>
   </body>
   
-  <!-- Footer section -->
+  <!-- Footer -->
   <footer>
     <p class="copy">&copy; Copyright 2022</p>
   </footer>
